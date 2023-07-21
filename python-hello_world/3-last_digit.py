@@ -2,17 +2,20 @@
 import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE/
-# Compute the last digit of the number (using absolute value to handle negative numbers)
+# get the last digit of the number
 last_digit = abs(number) % 10
 
-# Determine the corresponding text based on the last digit
-if last_digit > 5:
-    text = "and is greater than 5"
-elif last_digit == 0:
-    text = "and is 0"
-else:
-    text = "and is less than 6 and not 0"
+# get the polarity of the number 
+polarity = -1 if number < 0 else 1
 
-# Output the full sentence
-print("Last digit of {} is {} {}".format(number, last_digit, text))
+# determine the message
+if last_digit > 5:
+    message = "and is greater than 5"
+elif last_digit == 0:
+    message = "and is 0"
+else:
+    message = "and is less than 6 and not 0"
+
+# print the complete message
+print(f"Last digit of {polarity*number:d} is {polarity*last_digit} {message}")
 
