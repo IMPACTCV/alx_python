@@ -1,4 +1,5 @@
 # Hexadecimal printing
 for i in range(99):
-    print(i, "= 0 x", hex(i)[2:])
+    print("{} = x {}".format(i, hex({i})[2:]))
+   
     
