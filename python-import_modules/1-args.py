@@ -6,7 +6,7 @@ num_args = len(sys.argv) - 1
 arg = sys.argv
 def argument(arg):
     count = 1
-    if len(argv) == 1:
+    if len(arg) == 1:
         print("{} argument:".format(num_args))
         for i in arg:
             print("{}: {}".format(count, i))
