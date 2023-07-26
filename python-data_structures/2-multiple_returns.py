@@ -12,7 +12,3 @@ def multiple_returns(sentence):
         return 0, None
     else:
         return len(sentence), sentence[0]
-
-
-length, first = multiple_returns(sentence)
-print("Length: {:d} - First character: {}".format(length, first))
