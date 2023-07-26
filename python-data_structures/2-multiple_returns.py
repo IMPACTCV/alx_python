@@ -1,10 +1,19 @@
+# def multiple_returns(sentence):
+#     length = len(sentence)
+#     if length == 0:
+#         first = None
+#     else:
+#         first = sentence[0]
+#     return "Length: {:d} - First character: {}".format(length, first)
+
+
 def multiple_returns(sentence):
-    length = len(sentence)
-    if length == 0:
-        first = None
+    if sentence == "":
+        return 0, None
     else:
-        first = sentence[0]
-    return "Length: {:d} - First character: {}".format(length, first)
+        return len(sentence), sentence[0]
 
 
-print(multiple_returns("At Holberton school, I learnt C!"))
+sentence = "At Holberton school, I learnt C!"
+length, first = multiple_returns(sentence)
+print("Length: {:d} - First character: {}".format(length, first))
