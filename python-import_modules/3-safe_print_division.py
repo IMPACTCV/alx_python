@@ -3,7 +3,7 @@ def safe_print_division(a, b):
         return "{:d} / {:d} = {}".format(a, b, a/b)
     except ZeroDivisionError:
         return "Error: Can't divide by zero"
-    except ValueError:
+    finally:
         return "Error: Non-numeric input"
 
     
