@@ -1,7 +1,11 @@
 def raise_exception():
-    return 
-    
+    x = "string"  # This is a string object
+    if type(x) != int:
+        raise TypeError  # Raise TypeError if x is not of type int
+
+
 try:
-    print(raise_exception())
+    raise_exception()
 except TypeError as te:
     print("Exception raised")
+
