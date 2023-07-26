@@ -1,10 +1,11 @@
 def safe_print_division(a, b):
     try:
-        return "{:d} / {:d} = {}".format(a, b, a/b)
+        result = a / b
     except ZeroDivisionError:
-        return "Error: Can't divide by zero"
+        result = None
     finally:
-        return "Error: Non-numeric input"
+        print("Inside result: {}".format(result))
+    return result
 
     
 
@@ -12,4 +13,5 @@ def safe_print_division(a, b):
 a = 12
 b = 2
 if __name__ == "__main__":
-    print(safe_print_division(a, b))
+    print("{:d} / {:d} = {}".format(a, b, safe_print_division(a, b)))
+   
