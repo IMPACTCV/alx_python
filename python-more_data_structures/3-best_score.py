@@ -1,4 +1,7 @@
 def best_score(a_dictionary):
+    if a_dictionary is None:
+        return None
+    
     best_key = None
     best_value = None
     
@@ -7,4 +10,4 @@ def best_score(a_dictionary):
             best_key = key
             best_value = value
             
-    return best_key    
+    return best_key
