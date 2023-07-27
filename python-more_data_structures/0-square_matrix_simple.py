@@ -8,8 +8,4 @@ def square_matrix_simple(matrix=[]):
     # Return the new matrix with squared values
     return new_matrix
 
-print(square_matrix_simple( [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12],
-]))
+
