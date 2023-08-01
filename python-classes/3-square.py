@@ -12,13 +12,13 @@ class Square:
     """
         self.__size = size
 
-        if type(size) != int and type(size) == str:
+        if type(size) != int:
             raise TypeError("size must be an integer")
         elif size<0:
             raise ValueError("size must be >= 0")
         
     """
-    Pulici instance method: def area(self):
+    Publici instance method: def area(self):
     tha returns the current square area
     """
 
@@ -27,6 +27,10 @@ class Square:
     
     @property
     def size(self):
+        if type(self.__size) != int:
+            raise TypeError("size must be an integer")
+        elif self.__size<0:
+            raise ValueError("size must be >= 0")
         return self.__size
     
     @size.setter
