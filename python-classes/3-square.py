@@ -12,9 +12,7 @@ class Square:
     """
         self.__size = size
 
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        elif type(size) == str:
+        if type(size) != int and type(size) == str:
             raise TypeError("size must be an integer")
         elif size<0:
             raise ValueError("size must be >= 0")
@@ -34,10 +32,3 @@ class Square:
     @size.setter
     def size(self, value):
         self.__size = value
-
-
-mysquare = Square(89) 
-print(mysquare.size) 
-mysquare.size = "89" 
-print(mysquare.size) 
-print(type(mysquare.size))
