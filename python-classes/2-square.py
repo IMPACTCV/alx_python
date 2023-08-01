@@ -19,7 +19,7 @@ class Square:
         
     """
     Pulici instance method: def area(self):
-    tha returns the current square
+    tha returns the current square area
     """
 
     def area(self):
