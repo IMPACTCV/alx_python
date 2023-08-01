@@ -51,4 +51,14 @@ class Square:
             if self.__size != 0:
                 print("#" * self.__size)
             else:
-                print("")
+                print(" ")
+
+my_square = Square(3)
+my_square.my_print()
+
+print("--")
+
+my_square.size = 0
+my_square.my_print()
+
+print("--")
