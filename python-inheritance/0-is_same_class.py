@@ -15,3 +15,7 @@ def is_ame_class(obj, a_class): # the function
     if the object is an instance of that class
     """
     return isinstance(obj, a_class)
+
+"""
+end of function
+"""
