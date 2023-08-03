@@ -18,7 +18,7 @@ def is_kind_of_class(obj, a_class):
     ----------
     obj : attribut
         the name of the object
-    a_class: class
+    a_class: class          
         the class name
     
     Returns
@@ -27,11 +27,4 @@ def is_kind_of_class(obj, a_class):
     Bool - specifing if the object is an the instance of that class or if the object is an instance of a class that inherited from, the specified class
     """
 
-    if isinstance(obj, a_class) or issubclass(obj, a_class):
-         return True
-
-    if type(obj) == bool and a_class == int:
-    
-         return False
-    elif a_class == object:
-         return False
+    return isinstance(obj, a_class)
