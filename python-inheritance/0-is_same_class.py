@@ -30,8 +30,8 @@ def is_same_class(obj, a_class):
     
     if type(obj) == type(a_class):
         return True
-    elif type(obj) == int:
+    elif type(obj) == int or type(obj) == list:
         return isinstance(obj, a_class)
     else:
         return False
-  
+    
