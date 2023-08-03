@@ -36,10 +36,4 @@ def is_kind_of_class(obj, a_class):
          return True
     else:
          return False
-
-    
-    
-    
-a = 3.14 
-print(is_kind_of_class(a, int))
-    
+  
