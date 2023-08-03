@@ -24,14 +24,19 @@ def is_same_class(obj, a_class):
     Returns
 
     -------
-    Bool - specifing if the is the object is the instance of that class
+    Bool - specifing if the object is an the instance of that class
 
     """
     
-    if type(obj) == type(a_class):
-        return True
-    elif type(obj) == int or type(obj) == list:
-        return isinstance(obj, a_class)
-    else:
-        return False
+    # if type(obj) == type(a_class):
+    #     print(type(a))
+    #     return True
+    # elif type(obj) == int or type(obj) == list or type(obj) == object:
+
+    #     return isinstance(obj, a_class)
+    # else:
+    #     print(type(a), type(object))
+    return isinstance(obj, a_class)
     
+# c = is_same_class(a, object)
+
