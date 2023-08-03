@@ -27,7 +27,11 @@ def is_same_class(obj, a_class):
     Bool - specifing if the is the object is the instance of that class
 
     """
+    
     if type(obj) == type(a_class):
         return True
+    elif type(obj) == int:
+        return isinstance(obj, a_class)
     else:
         return False
+  
