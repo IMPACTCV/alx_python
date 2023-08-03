@@ -33,12 +33,5 @@ def is_same_class(obj, a_class):
          return False
     elif a_class == object:
          return False
-    # elif type(obj) == int or type(obj) == list or type(obj) == object:
-
-    #     return isinstance(obj, a_class)
-    # else:
-    #     print(type(a), type(object))
-    # if type(obj) == int:
-    #     return 
     return isinstance(obj, a_class)
     
