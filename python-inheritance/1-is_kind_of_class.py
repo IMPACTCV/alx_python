@@ -26,15 +26,20 @@ def is_kind_of_class(obj, a_class):
     -------
     Bool - specifing if the object is an the instance of that class or if the object is an instance of a class that inherited from, the specified class
     """
-
-    if isinstance(obj, a_class) or issubclass(obj, a_class):
-         return True
-
     if type(obj) == bool and a_class == int:
     
          return False
     elif a_class == object:
-         return False
-    
+         return False 
 
+    if isinstance(obj, a_class) or issubclass(type(obj), a_class):
+         return True
+    else:
+         return False
+
+    
+    
+    
+a = 3.14 
+print(is_kind_of_class(a, int))
     
