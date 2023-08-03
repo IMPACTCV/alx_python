@@ -1,21 +1,31 @@
-"""
-function to check i a particular object 
-is an instance of a class
-"""
-"""
-define the function
-"""
-"""
-function 
-"""
-def is_ame_class(obj, a_class): # the function
+"""Exact same object
 
-    """
-    return the T or F
-    if the object is an instance of that class
+This script allow the user to cheack if
+a particular object is an instance of a class
+
+This script requirea  Python
+environment install where you are running this script in.
+
+* isinstance - is_same_class - returns True if the object 
+is exactly an instance of the specified class ; otherwise False
+"""
+
+def is_same_class(obj, a_class):
+    """ Get and print True or False 
+
+    parameters
+    
+    ----------
+    obj : attribut
+        the name of the object
+    a_class: class
+        the class name
+    
+    Returns
+
+    -------
+    Bool - specifing if the is the object is the instance of that class
+
     """
     return isinstance(obj, a_class)
 
-"""
-end of function
-"""
