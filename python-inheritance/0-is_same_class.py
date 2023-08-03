@@ -28,15 +28,22 @@ def is_same_class(obj, a_class):
 
     """
     
-    # if type(obj) == type(a_class):
-    #     print(type(a))
-    #     return True
+    if type(obj) == bool and a_class == int:
+    
+         return False
+    elif a_class == object:
+         return False
     # elif type(obj) == int or type(obj) == list or type(obj) == object:
 
     #     return isinstance(obj, a_class)
     # else:
     #     print(type(a), type(object))
+    # if type(obj) == int:
+    #     return 
     return isinstance(obj, a_class)
     
 # c = is_same_class(a, object)
+
+a = True
+print(is_same_class([1,2,3], object))
 
