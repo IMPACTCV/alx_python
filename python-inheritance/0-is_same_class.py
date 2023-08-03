@@ -42,8 +42,3 @@ def is_same_class(obj, a_class):
     #     return 
     return isinstance(obj, a_class)
     
-# c = is_same_class(a, object)
-
-a = True
-print(is_same_class([1,2,3], object))
-
