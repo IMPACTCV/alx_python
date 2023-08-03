@@ -1,4 +1,4 @@
-"""Exact same object
+"""Same class or inherit from
 
 This script allow the user to cheack if
 a particular object is an instance of a class
@@ -24,7 +24,7 @@ def is_kind_of_class(obj, a_class):
     Returns
 
     -------
-    Bool - specifing if the object is an the instance of that class
+    Bool - specifing if the object is an the instance of that class or if the object is an instance of a class that inherited from, the specified class
     """
 
     if type(obj) == bool and a_class == int:
@@ -32,6 +32,6 @@ def is_kind_of_class(obj, a_class):
          return False
     elif a_class == object:
          return False
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) or issubclass(obj, a_class)
 
     
