@@ -38,10 +38,3 @@ def inherits_from(obj, a_class):
     """
 
     return issubclass(type(obj), a_class)
-
-a = 1 
-c = inherits_from(a, int)
-print(c)
-a = 1 
-d = inherits_from(a, int)
-print(d)

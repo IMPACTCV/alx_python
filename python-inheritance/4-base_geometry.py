@@ -9,8 +9,6 @@ write an empty class
 
 """
 
-from collections.abc import Iterable
-
 
 class BaseGeometry:
     """
