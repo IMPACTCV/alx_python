@@ -16,7 +16,7 @@ class BaseGeometry:
     """
     A class defined
     """
-    def __dir__(self) -> Iterable[str]:
+    def __dir__(self):
         pass
     
     
