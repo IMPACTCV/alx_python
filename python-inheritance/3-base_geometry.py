@@ -13,5 +13,4 @@ class BaseGeometry:
     """
     A class defined
     """
-    def __init__(self):
-        pass
+    pass
