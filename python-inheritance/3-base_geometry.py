@@ -9,12 +9,15 @@ write an empty class
 
 """
 
+from collections.abc import Iterable
+
+
 class BaseGeometry:
     """
     A class defined
     """
-    
-    def __init__(self) -> None:
+    def __dir__(self) -> Iterable[str]:
         pass
+    
     
 
