@@ -43,6 +43,25 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """
+    class Reactangle -->
+
+    Inherits from BaseGeomerty
+
+    --------
+    Parameters
+    ----------
+
+    width: the width of the rectangle
+
+    height: the height of the rectancle
+
+    ----------
+    
+    returs --->
+    width and height must be positive 
+    integers, validated by integer_validator() function
+    """
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
