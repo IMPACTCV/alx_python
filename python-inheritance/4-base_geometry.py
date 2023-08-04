@@ -1,4 +1,4 @@
-"""Geometry module
+"""Improve Geometry
 
 --------
 
@@ -15,7 +15,14 @@ from collections.abc import Iterable
 class BaseGeometry:
     """
     A class defined
+
+    -------
+
+    def area(self): --> methods to return exception
+
+    Raise:
+    Exception with meassage
     """
-    def __init__(self):
-        pass
+    def area(self):
+        raise Exception("area() is not implemented")
     
