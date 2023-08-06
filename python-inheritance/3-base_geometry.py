@@ -14,6 +14,12 @@ class BaseGeometry:
     A class defined
     """
     def __dir__(self):
+        """
+        define the function:
+
+    parameters-->
+    self -> no parameters
+        """
         attributes = super().__dir__()
         new_attribute_list = [x for x in attributes if x != "__init_subclass__"]
         return new_attribute_list
