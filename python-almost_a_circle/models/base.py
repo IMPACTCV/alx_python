@@ -19,4 +19,4 @@ class Base:
         else:
             self.__nb_objects += 1
             self.id = self.__nb_objects
-
+            
