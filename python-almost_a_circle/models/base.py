@@ -15,8 +15,7 @@ class Base:
     # constructor
     def __init__(self, id=None):
         if id is not None:
-            self.id = self.__nb_objects
+            self.id = id
         else:
             self.__nb_objects += 1
             self.id = self.__nb_objects
-            
