@@ -62,7 +62,7 @@ define my class Rectangle
         return self.__y
     
     @y.setter
-    def width(self, y):
+    def y(self, y):
         """set the y-coordinate of the rectangle"""
         self.__y = y
        
