@@ -90,7 +90,7 @@ define my class Rectangle
     """
     def validate_width(self):
         """Validate the width"""
-        if  not isinstance(self._, int):
+        if  not isinstance(self.__width, int):
             raise TypeError("width must be an integer")
         if self.__width<=0:
             raise ValueError(" width must be > 0")
