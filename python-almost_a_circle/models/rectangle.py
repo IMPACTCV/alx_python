@@ -138,3 +138,15 @@ define my class Rectangle
         """
         for i in range(self.__height):
                 print("#" * self.__width)
+
+    """
+    5 __str__
+    """
+    def __str__(self):
+        """overriding
+
+        returns:
+
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.y, self.__width, self.__height,)
