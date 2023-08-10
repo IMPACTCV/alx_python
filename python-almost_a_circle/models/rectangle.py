@@ -149,3 +149,9 @@ define my class Rectangle
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.y, self.__width, self.__height,)
+    
+    """6 Display #1"""
+    def display(self):
+        for i in range(self.__height):
+                print("#" * self.__width)
+                
