@@ -103,7 +103,7 @@ define my class Rectangle
     def validate_x(self):
         """Validate x"""
         if  not isinstance(self.__x, int):
-            raise TypeError("y must be an integer")
+            raise TypeError("x must be an integer")
         if self.__x<0:
             raise ValueError("x must be >= 0")
     def validate_y(self):
