@@ -11,9 +11,7 @@ define my class Rectangle
 """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        """
-        models/rectangle.py
-        Private instance attributes
+        """Initialize a rectangle.
 
         Arguments:
             width: The width of the rectangle.
@@ -27,11 +25,6 @@ define my class Rectangle
         self.__height = height
         self.__x = x
         self.__y = y
-
-
-    """
-    defining getter and setter for every private attribute
-    """
 
     @property
     def width(self):

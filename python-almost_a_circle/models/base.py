@@ -8,9 +8,8 @@ class Base:
     class defined
     """
 
-    # define a private attribut
-
     __nb_objects = 0
+    """define a private attribut"""
 
     # constructor
     def __init__(self, id=None):
