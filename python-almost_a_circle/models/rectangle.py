@@ -24,9 +24,14 @@ define my class
         super().__init__(id)
         """
         models/rectangle.py
-Class Rectangle inherits from Base
-Private instance attributes, each with 
-its own public getter and setter:
+        Private instance attributes
+
+        Arguments:
+            width: The width of the rectangle.
+            height: The height of the rectangle.
+            x: The x-coordinate of the rectangle.
+            y: The y-coordinate of the rectangle.
+            id: The ID of the rectangle.
 
         """
         self.__width = width
@@ -40,33 +45,41 @@ its own public getter and setter:
 
     @property
     def get_width(self):
+        """Get the width"""
         return self.__width
     
     @width.setter
     def width(self, width):
+        """set the width"""
         self.__width = width
 
     @property
     def get_height(self):
+        """get the height"""
         return self.__height
     
     @height.setter
     def width(self, height):
+        """set the height"""
         self.__height = height
 
     @property
     def get_x(self):
+        """get x-coordinate of the rectangle"""
         return self.__x
     
     @x.setter
-    def width(self, x):
+    def x(self, x):
+        """set the x-coordinate of the rectangle"""
         self.__x = x
 
     @property
     def get_y(self):
+        """get the y-coordinate of the rectangle"""
         return self.__y
     
     @y.setter
     def width(self, y):
+        """set the y-coordinate of the rectangle"""
         self.__y = y
         
