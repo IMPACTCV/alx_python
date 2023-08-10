@@ -17,8 +17,18 @@ define my class
 """
 
 class Rectangle(Base):
+    """
+define my class
+"""
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
+        """
+        models/rectangle.py
+Class Rectangle inherits from Base
+Private instance attributes, each with 
+its own public getter and setter:
+
+        """
         self.__width = width
         self.__height = height
         self.__x = x
@@ -59,3 +69,4 @@ class Rectangle(Base):
     @y.setter
     def width(self, y):
         self.__y = y
+        
