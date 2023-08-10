@@ -129,5 +129,12 @@ define my class Rectangle
     Display #0
     """
     def display(self):
+        """
+        funtion to display rectangle
+
+        Returns:
+
+        the shape of the rectangle
+        """
         for i in range(self.__height):
                 print("#" * self.__width)
