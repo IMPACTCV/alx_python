@@ -161,7 +161,7 @@ define my class Rectangle
                 print("#" * self.__width)
 
     """7. Update #0"""
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update
         returns:
 
@@ -186,3 +186,7 @@ define my class Rectangle
                 self.__x = args[3]
             if num_args >= 5:
                 self.__y = args[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+            
