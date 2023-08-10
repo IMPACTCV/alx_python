@@ -86,7 +86,7 @@ define my class Rectangle
         self.__y = value
        
     """
-    Validate attributes task 2
+    2 Validate attributes task
     """
     def validate_width(self):
         """Validate the width"""
@@ -114,7 +114,7 @@ define my class Rectangle
             raise ValueError("y must be >= 0")
         
     """
-    Area first
+    3 Area first
     """
     def area(self):
         """Public method
@@ -126,7 +126,7 @@ define my class Rectangle
         return area
     
     """
-    Display #0
+    4 Display #0
     """
     def display(self):
         """
@@ -150,3 +150,10 @@ define my class Rectangle
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.y, self.__width, self.__height,)
+    
+    """6 Display #1"""
+    def display(self):
+        for r in range(self.__y):
+            print("$")
+        for i in range(self.__height):
+                print("#" * self.__width, "$")
