@@ -2,7 +2,7 @@
 
 from models.rectangle import Rectangle
 
-class Sqare(Rectangle):
+class Square(Rectangle):
     """
     class defined
     """
