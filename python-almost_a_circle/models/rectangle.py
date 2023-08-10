@@ -176,13 +176,13 @@ define my class Rectangle
 
         if args:
             leng = leng(args)
-            if leng == 1:
+            if leng >= 1:
                 self.id = args[0]
-            if leng == 2:
+            if leng >= 2:
                 self.__width = args[1]
-            if leng == 3:
+            if leng >= 3:
                 self.__height = args[2]
-            if leng == 4:
+            if leng >= 4:
                 self.__x = args[3]
-            if leng == 5:
+            if leng >= 5:
                 self.__y = args[4]
