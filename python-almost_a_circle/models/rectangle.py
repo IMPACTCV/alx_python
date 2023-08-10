@@ -65,6 +65,10 @@ define my class Rectangle
     @x.setter
     def x(self, x):
         """set the x-coordinate of the rectangle"""
+        if  not isinstance(self.__x, int):
+            raise TypeError("y must be an integer")
+        if self.__x<0:
+            raise ValueError("x must be >= 0")
         self.__x = x
 
     @property
@@ -75,6 +79,10 @@ define my class Rectangle
     @y.setter
     def y(self, y):
         """set the y-coordinate of the rectangle"""
+        if  not isinstance(self.__y, int):
+            raise TypeError("y must be an integer")
+        if self.__y<0:
+            raise ValueError("y must be >= 0")
         self.__y = y
        
     """
