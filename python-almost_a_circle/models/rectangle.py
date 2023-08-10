@@ -113,3 +113,15 @@ define my class Rectangle
         if self.__y<0:
             raise ValueError("y must be >= 0")
         
+    """
+    Area first
+    """
+    def area(self):
+        """Public method
+        
+        Returns:
+        area value of the ractangle
+        """
+        area = (self.__width - self.__x) * (self.__height - self.__y)
+        return area
+  
