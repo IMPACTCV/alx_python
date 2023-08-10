@@ -152,12 +152,29 @@ define my class Rectangle
     
     """6 Display #1"""
     def display(self):
+        """Display
+        
+        returns:
+        the rectange including the x and y
+        """
         for i in range(self.__height):
                 print("#" * self.__width)
+
+    """7. Update #0"""
     def update(self, *args):
+        """Update
+        returns:
+
+        assigns an argument to each attribute:
+
+        1st argument should be the id attribute
+        2nd argument should be the width attribute
+        3rd argument should be the height attribute
+        4th argument should be the x attribute
+        5th argument should be the y attribute
+        """
         self.id = args[0]
         self.__width = args[1]
         self.__height = args[2]
         self.__x = args[3]
         self.__y = args[4]
-
