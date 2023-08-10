@@ -1,5 +1,5 @@
 """
-create a class
+create the base class class
 
 """
 
@@ -14,6 +14,11 @@ class Base:
 
     # constructor
     def __init__(self, id=None):
+        """
+        arg:
+
+        id -> this is the id of the base class
+        """
         if id is not None:
             self.id = id
         else:
