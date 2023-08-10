@@ -173,4 +173,8 @@ define my class Rectangle
         4th argument should be the x attribute
         5th argument should be the y attribute
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.y, self.__width, self.__height,)
+
+        self.__width = args
+        self.__height = args
+        self.__x = args
+        self.__y = args
