@@ -154,4 +154,10 @@ define my class Rectangle
     def display(self):
         for i in range(self.__height):
                 print("#" * self.__width)
-                
+    def update(self, *args):
+        self.id = args[0]
+        self.__width = args[1]
+        self.__height = args[2]
+        self.__x = args[3]
+        self.__y = args[4]
+
