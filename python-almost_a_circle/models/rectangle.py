@@ -83,4 +83,33 @@ define my class
     def width(self, y):
         """set the y-coordinate of the rectangle"""
         self.__y = y
+       
+    """
+    Validate attributes task 2
+    
+    """
+    def validate_width(self):
+        """Validate the width"""
+        if  not isinstance(self.__width, int):
+            raise TypeError("width must be an integer")
+        if self.__width<=0:
+            raise ValueError(" width must be > 0")
+    def validate_height(self):
+        """Validate the height"""
+        if  not isinstance(self.__height, int):
+            raise TypeError("width must be an integer")
+        if self.__height<=0:
+            raise ValueError(" width must be > 0")
+    def validate_x(self):
+        """Validate x"""
+        if  not isinstance(self.__width, int):
+            raise TypeError("width must be an integer")
+        if self.__x<0:
+            raise ValueError("x must be >= 0")
+    def validate_x(self):
+        """Validate y"""
+        if  not isinstance(self.__width, int):
+            raise TypeError("width must be an integer")
+        if self.__x<0:
+            raise ValueError("x must be >= 0")
         
