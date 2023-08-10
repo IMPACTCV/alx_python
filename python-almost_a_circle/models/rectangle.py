@@ -3,7 +3,7 @@ This model defines the rectangle class which
 inherites fron the base class
 """
 
-from models.base import Base
+from base import Base
 
 class Rectangle(Base):
     """
@@ -124,4 +124,10 @@ define my class Rectangle
         """
         area = (self.__width) * (self.__height)
         return area
-  
+    
+    """
+    Display #0
+    """
+    def display(self):
+        for i in range(self.__height):
+                print("#" * self.__width)
