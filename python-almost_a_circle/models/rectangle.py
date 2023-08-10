@@ -32,9 +32,9 @@ define my class Rectangle
         return self.__width
     
     @width.setter
-    def width(self, width):
+    def width(self, value):
         """set the width"""
-        self.__width = width
+        self.__width = value
 
     @property
     def height(self):
@@ -42,9 +42,9 @@ define my class Rectangle
         return self.__height
     
     @height.setter
-    def width(self, height):
+    def width(self, value):
         """set the height"""
-        self.__height = height
+        self.__height = value
 
     @property
     def x(self):
