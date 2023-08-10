@@ -67,7 +67,7 @@ define my class Rectangle
         """set the x-coordinate of the rectangle"""
         if  not isinstance(value, int):
             raise TypeError("x must be an integer")
-        if self.__x<0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -81,7 +81,7 @@ define my class Rectangle
         """set the y-coordinate of the rectangle"""
         if  not isinstance(value, int):
             raise TypeError("y must be an integer")
-        if self.__y<0:
+        if value<0:
             raise ValueError("y must be >= 0")
         self.__y = value
        
