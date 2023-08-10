@@ -1,24 +1,13 @@
 """
-Write the class Rectangle that inherits from Base:
-
-In the file models/rectangle.py
-Class Rectangle inherits from Base
-Private instance attributes, each with its own public getter and setter:
-__width -> width
-__height -> height
-__x -> x
-__y -> y
+This model defines the rectangle class which
+inherites fron the base class
 """
 
 from base import Base
 
-"""
-define my class
-"""
-
 class Rectangle(Base):
     """
-define my class
+define my class Rectangle
 """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -110,6 +99,6 @@ define my class
         """Validate y"""
         if  not isinstance(self.__width, int):
             raise TypeError("width must be an integer")
-        if self.__x<0:
-            raise ValueError("x must be >= 0")
+        if self.__y<0:
+            raise ValueError("y must be >= 0")
         
