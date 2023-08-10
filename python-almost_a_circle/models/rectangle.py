@@ -122,6 +122,6 @@ define my class Rectangle
         Returns:
         area value of the ractangle
         """
-        area = (self.__width - self.__x) * (self.__height - self.__y)
+        area = (self.__width) * (self.__height)
         return area
   
