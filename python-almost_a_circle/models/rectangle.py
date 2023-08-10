@@ -156,4 +156,4 @@ define my class Rectangle
         for r in range(self.__y):
             print("$")
         for i in range(self.__height):
-                print("#" * self.__width, "$")
+                print("#" * self.__width)
