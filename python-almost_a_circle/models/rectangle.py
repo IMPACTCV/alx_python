@@ -2,7 +2,6 @@
 This model defines the rectangle class which
 inherites fron the base class
 """
-
 from models.base import Base
 
 class Rectangle(Base):
