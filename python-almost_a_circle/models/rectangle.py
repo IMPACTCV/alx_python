@@ -2,7 +2,7 @@
 This model defines the rectangle class which
 inherites fron the base class
 """
-from models.base import Base
+from base import Base
 
 class Rectangle(Base):
     """
@@ -173,8 +173,3 @@ define my class Rectangle
         4th argument should be the x attribute
         5th argument should be the y attribute
         """
-        self.id = args[0]
-        self.__width = args[1]
-        self.__height = args[2]
-        self.__x = args[3]
-        self.__y = args[4]
